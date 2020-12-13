@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .hobbyimg{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: inline-block;
+      }
+      img{
+         display:block;
+         width: 200px;
+         height: 200px;
+
+      }
+      .overlay{
+         position: absolute;
+         transition: all .5s ease;
+         opacity: 0;
+         background-color: rgba(230, 138, 102,.5);
+      }
+      .hobbyimg:hover .overlay{
+         width: 100%;
+         opacity: 1;
+      }
+      .text{
+         color: white;
+         font-size: 2rem;
+         font-family: sans-serif;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+      }
+      .overlay_left{
+         height: 100%;
+         width: 0;
+         top: 0;
+         left: 0;
+
+      }
+      .overlay_right{
+         height: 100%;
+         width: 0;
+         top: 0;
+         right: 0;
+
+      }
+      .hobbyimg:hover .overlay_left  .overlay_right{
+         width: 100%;
+      }
+      .overlay_top{
+         width: 100%;
+         height: 0;
+         top: 0;
+         left: 0;
+      }
+      .overlay_bottom{
+         width: 100%;
+         height: 0;   
+         bottom: 0;
+         left: 0;
+       }
+    .hobbyimg:hover .overlay_top,.hobbyimg:hover .overlay_bottom{
+         height: 100%;
+      }
+      .overlay_cross{
+         width: 0;
+         height: 0;
+         top: 0;
+         left: 0;
+      }
+      .overlay_fade{
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         background-color: rgba(230, 138, 102,.5);
+      }
+      .hobbyimg:hover .overlay_cross{
+         height: 100%;
+         width: 100%;
+      }
+   </style>
+</head>
+<body>
+   <div>
+   <div class="hobbyimg">
+      <img src="./Images/games.jpg" alt="">
+      <div class="overlay overlay_left">
+         <div class="text">Playing Games</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/travelling.jpg" alt="">
+      <div class="overlay overlay_right">
+         <div class="text">Travelling</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/dog.jpg" alt="">
+      <div class="overlay overlay_top">
+         <div class="text">Playing with Dog</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/music.jpg" alt="">
+      <div class="overlay overlay_bottom">
+         <div class="text">Listening To Music</div>
+      </div>
+   </div>
+</div>
+
+
+<!-- 2nd row -->
+
+   <div>
+   <div class="hobbyimg">
+      <img src="./Images/programming.jpg" alt="">
+      <div class="overlay overlay_cross">
+         <div class="text">Play with Code</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/music.jpg" alt="">
+      <div class="overlay overlay_fade">
+         <div class="text">Reading Book</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/My_pic.jpeg" alt="">
+      <div class="overlay overlay_left">
+         <div class="text">Web developer</div>
+      </div>
+   </div>
+   <div class="hobbyimg">
+      <img src="./Images/My_pic.jpeg" alt="">
+      <div class="overlay overlay_left">
+         <div class="text">Web developer</div>
+      </div>
+   </div>
+</div>
+</body>
+</html>

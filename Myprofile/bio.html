@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <!-- font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+     <!-- bootstrap file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="home_section">
+    <!-- navigation bar created using bootstrap navbar classes -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <!-- here is logo -->
+       <a class="navbar-brand logo" style="font-family: 'Dancing Script', cursive;">Ra<span>je</span>sh</a>
+       <!-- toggler or hamburger button -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav  mx-auto">
+           <li class="nav-item active p-lg-4">
+             <!-- added nav-links bootstrap classes for naviagtion -->
+             <a class="nav-link"  href="/bio.html">Home<span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item p-lg-4">
+             <a class="nav-link" href="about.html">About</a>
+           </li>
+           <li class="nav-item p-lg-4">
+             <a class="nav-link " href="/study.html">Study</a>
+           </li>
+           <li class="nav-item p-lg-4">
+             <a class="nav-link " href="/achivement.html">Achivement</a>
+           </li>
+           <li class="nav-item p-lg-4">
+             <a class="nav-link" href="/contact.html">Contact</a>
+           </li>
+          </div>      
+    </nav> 
+    <div class="container">
+       <div class="row"> 
+          <div class="col-md-6">
+            <div class="box">
+              <h2 id="main_text"></h2>
+               <img src="./Images/My_pic.jpeg"  alt="">
+               <div class="box-content">
+                  <div class="content">
+                     <ul class="social">
+                        <li><a href=""></a><i class="fab fa-linkedin"></i></li>
+                        <li><a href=""></a><i class="fab fa-github"></i></li>
+                        <li><a href=""></a><i class="fab fa-instagram"></i></li>
+                     </ul>
+                     <span class="post">Web developer</span>
+                  </div>
+               </div>
+            </div>
+            <h1 class="name">Rajesh Samberwal</h1>
+           <div class="homebtn btn btn-md btn-outline-danger p-2 mt-5 ml-3"><i class="fas fa-arrow-circle-down"></i>&nbsp;Download CV</div> 
+            <div class="homebtn btn btn-md btn-outline-danger p-2 mt-5 ml-3"><a href=""></a><i class="fab fa-linkedin"></i>&nbsp; Get in Touch</div>
+          </div>
+          <div class="col-md-6 second_box">
+            <div class="row">  
+            <div id="subnav" class="col-3 m-5">
+                   <div class="sub">Rajesh Samberwal<span style="color: gold;"> Web Developer</span>
+                   </div>
+                   <div class="sub">Graduate in Computer Application<i class="fas fa-user-graduate" style="font-size: 3rem; color:gold;"></i></div>
+                   <div class="sub">HTML5 CSS3 JAVASCRIPT jQUERY Bootstrap Nodejs C,C++</div></div>
+                   <div id="subnav" class="col-3 m-5">
+                   <div class="sub">rasstech88@gmail.com Ph. +91 456-234-1276</div>
+                   <div class="sub"></i>Interst : MERN<i class="fas fa-laptop-code" style="font-size: 3rem; color:gold"></i></div>
+                   <div class="sub">Projects &nbsp;<i class="fas fa-angle-double-right" style="font-size: 3rem; color:gold;"></i></div></div>
+                </div> 
+          </div>
+       </div>
+    </div> 
+</div>
+
+<script>
+  var x=0;
+  var text ='Fix the cause, not the symptom.';
+  var main_text=document.getElementById('main_text');
+  function animate_text(){
+    if(x<text.length){
+      main_text.innerHTML += text.charAt(x);
+      x++;
+      setTimeout(animate_text, 80);
+      // setInterval(animate_text,800);
+    }
+  }
+  animate_text();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
